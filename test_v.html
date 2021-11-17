@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1, user-scalable=no">
+    <title>eUprava</title>
+	<link rel="stylesheet" type="text/css" href="test_v.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/TheEGovernmentTheme/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="theme-default">
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Грађани<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Привреда</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Држава</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Подешавaња</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ћирилица
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/RedirectToLocalizedContent?targetculture=sr-Cyrl&amp;contentItemUrl=%2FDigitalniZeleniSertifikat%2FvalidacijaDokumenta%2Fid%3DcmVxSUQ9YmQxNzRmMzgtYzlkZi00NmE5LTljMjgtMmQ1ZTFkZGEyOWFhJnBhc3Nwb3J0TnVtYmVyPUEyNTMwOTEmY29uZmlybWF0aW9uTnVtYmVyPTU3MjUyODktMjgxNDUyMyZsYW5nPWVuLWdi-Do987%252f%252fD99QgqM5p8NEzzQ%3D%3D">Ћирилица</a>
+                      <a class="dropdown-item" href="/RedirectToLocalizedContent?targetculture=sr-Latn&amp;contentItemUrl=%2FDigitalniZeleniSertifikat%2FvalidacijaDokumenta%2Fid%3DcmVxSUQ9YmQxNzRmMzgtYzlkZi00NmE5LTljMjgtMmQ1ZTFkZGEyOWFhJnBhc3Nwb3J0TnVtYmVyPUEyNTMwOTEmY29uZmlybWF0aW9uTnVtYmVyPTU3MjUyODktMjgxNDUyMyZsYW5nPWVuLWdi-Do987%252f%252fD99QgqM5p8NEzzQ%3D%3D">Latinica</a>
+                  </li>
+            </ul>
+        </div>
+      </nav>
+    <header>
+      <div class="container">
+        <div>
+            <h1 class="inline-header">
+                <img class="logo" src="./image2.jpg"/>
+                <a class="custom-link" href="/">euprava.gov.rs</a>
+            </h1>
+            <div class="custom-inline-div">
+                <span class="current"><img class="mappin" src="./mappin.svg">Локација није одабрана</span>
+                <div class="dropdown">
+                    <button class="btn custom-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Промените
+                      </button>
+                    <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" data-value="-1" href="#">&#x41B;&#x43E;&#x43A;&#x430;&#x446;&#x438;&#x458;&#x430; &#x43D;&#x438;&#x458;&#x435; &#x43E;&#x434;&#x430;&#x431;&#x440;&#x430;&#x43D;&#x430;</a>
+                      <a class="dropdown-item" data-value="80012" href="#">&#x410;&#x434;&#x430;</a>
+                      <a class="dropdown-item" data-value="70017" href="#">&#x410;&#x43B;&#x435;&#x43A;&#x441;&#x430;&#x43D;&#x434;&#x440;&#x43E;&#x432;&#x430;&#x446;</a>
+                      <a class="dropdown-item" data-value="70025" href="#">&#x410;&#x43B;&#x435;&#x43A;&#x441;&#x438;&#x43D;&#x430;&#x446;</a>
+                      <a class="dropdown-item" data-value="80039" href="#">&#x410;&#x43B;&#x438;&#x431;&#x443;&#x43D;&#x430;&#x440;</a>              
+                      <a class="dropdown-menu" data-value="80047" href="#">&#x410;&#x43F;&#x430;&#x442;&#x438;&#x43D;</a>
+                      <a class="dropdown-menu" data-value="70033" href="#">&#x410;&#x440;&#x430;&#x43D;&#x452;&#x435;&#x43B;&#x43E;&#x432;&#x430;&#x446;</a>
+                      <a class="dropdown-menu" data-value="70041" href="#">&#x410;&#x440;&#x438;&#x459;&#x435;</a>
+                      <a class="dropdown-menu" data-value="70050" href="#">&#x411;&#x430;&#x431;&#x443;&#x448;&#x43D;&#x438;&#x446;&#x430;</a>
+                      <a class="dropdown-menu" data-value="70068" href="#">&#x411;&#x430;&#x458;&#x438;&#x43D;&#x430; &#x411;&#x430;&#x448;&#x442;&#x430;</a>
+                      <a class="dropdown-menu" data-value="70092" href="#">&#x411;&#x430;&#x440;&#x430;&#x458;&#x435;&#x432;&#x43E;</a>
+                      <a class="dropdown-menu" data-value="70076" href="#">&#x411;&#x430;&#x442;&#x43E;&#x447;&#x438;&#x43D;&#x430;</a>
+                      <a class="dropdown-menu" data-value="80055" href="#">&#x411;&#x430;&#x447;</a>
+                      <a class="dropdown-menu" data-value="80063" href="#">&#x411;&#x430;&#x447;&#x43A;&#x430; &#x41F;&#x430;&#x43B;&#x430;&#x43D;&#x43A;&#x430;</a>
+                      <a class="dropdown-menu" data-value="80071" href="#">&#x411;&#x430;&#x447;&#x43A;&#x430; &#x422;&#x43E;&#x43F;&#x43E;&#x43B;&#x430;</a>
+                      <a class="dropdown-menu" data-value="80080" href="#">&#x411;&#x430;&#x447;&#x43A;&#x438; &#x41F;&#x435;&#x442;&#x440;&#x43E;&#x432;&#x430;&#x446;</a>
+                      <a class="dropdown-menu" data-value="70084" href="#">&#x411;&#x435;&#x43B;&#x430; &#x41F;&#x430;&#x43B;&#x430;&#x43D;&#x43A;&#x430;</a>
+                      <a class="dropdown-menu" data-value="80098" href="#">&#x411;&#x435;&#x43B;&#x430; &#x426;&#x440;&#x43A;&#x432;&#x430;</a>
+                      <a class="dropdown-menu" data-value="80101" href="#">&#x411;&#x435;&#x43E;&#x447;&#x438;&#x43D;</a>
+                      <a class="dropdown-menu" data-value="80110" href="#">&#x411;&#x435;&#x447;&#x435;&#x458;</a>
+                      <a class="dropdown-menu" data-value="70262" href="#">&#x411;&#x43B;&#x430;&#x446;&#x435;</a>
+                      <a class="dropdown-menu" data-value="70289" href="#">&#x411;&#x43E;&#x433;&#x430;&#x442;&#x438;&#x45B;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x411;&#x43E;&#x458;&#x43D;&#x438;&#x43A;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x411;&#x43E;&#x459;&#x435;&#x432;&#x430;&#x446;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x411;&#x43E;&#x440;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x411;&#x43E;&#x441;&#x438;&#x43B;&#x435;&#x433;&#x440;&#x430;&#x434;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x411;&#x440;&#x443;&#x441;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x411;&#x443;&#x458;&#x430;&#x43D;&#x43E;&#x432;&#x430;&#x446;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x430;&#x459;&#x435;&#x432;&#x43E;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x430;&#x440;&#x432;&#x430;&#x440;&#x438;&#x43D;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x435;&#x43B;&#x438;&#x43A;&#x430; &#x41F;&#x43B;&#x430;&#x43D;&#x430;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x435;&#x43B;&#x438;&#x43A;&#x43E; &#x413;&#x440;&#x430;&#x434;&#x438;&#x448;&#x442;&#x435;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x438;&#x442;&#x438;&#x43D;&#x430;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x43B;&#x430;&#x434;&#x438;&#x43C;&#x438;&#x440;&#x446;&#x438;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x43B;&#x430;&#x434;&#x438;&#x447;&#x438;&#x43D; &#x425;&#x430;&#x43D;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x43B;&#x430;&#x441;&#x43E;&#x442;&#x438;&#x43D;&#x446;&#x435;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x43E;&#x436;&#x434;&#x43E;&#x432;&#x430;&#x446;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x440;&#x430;&#x45A;&#x435;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x440;&#x430;&#x45A;&#x441;&#x43A;&#x430; &#x411;&#x430;&#x45A;&#x430;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x440;&#x430;&#x447;&#x430;&#x440;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x440;&#x431;&#x430;&#x441;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x440;&#x45A;&#x430;&#x447;&#x43A;&#x430; &#x411;&#x430;&#x45A;&#x430;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x440;&#x448;&#x430;&#x446;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x412;&#x443;&#x447;&#x438;&#x442;&#x440;&#x43D;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x413;&#x430;&#x45F;&#x438;&#x43D; &#x425;&#x430;&#x43D;</a>
+                      <a class="dropdown-menu" data-value="70297" href="#">&#x413;&#x43B;&#x43E;&#x433;&#x43E;&#x432;&#x430;&#x446;</a>
+                    </div>
+                </div>
+                <span class="help" onclick="myFunction()"><i class="far fa-question-circle"></i></span>
+                <div class="popuptext" id="myPopup">
+                    <p>Одабиром локације приказаће Вам се услуге само које су доступне за ту локацију.</p>
+                </div>
+            </div>       
+        </div>
+        <div class="custom-nav-two">		      
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Услуге
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Лична документа</a>
+                            <a class="dropdown-item" href="#">Деца; Образовање</a>
+                            <a class="dropdown-item" href="#">Здравље</a>
+                            <a class="dropdown-item" href="#">Саобраћај; Туризам</a>
+                            <a class="dropdown-item" href="#">Уверења</a>
+                            <a class="dropdown-item" href="#">Финансије</a>
+                            <a class="dropdown-item" href="#">Посао</a>
+                            <a class="dropdown-item" href="#">Пројекти</a>
+                            <a class="dropdown-item" href="#">Инспекцијске службе</a>
+                            <a class="dropdown-item" href="#">Foreigner</a>
+                            <a class="dropdown-item" href="#">Урбанизам и грађевина</a>
+                            <a class="dropdown-item" href="#">Све услуге</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Животни догађаји
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Вести</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Помоћ</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Контакт</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 moja-uprava">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas  fa-address-card"></i>  Моја еУправа
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="/RedirectToLocalizedContent?targetculture=sr-Cyrl&amp;contentItemUrl=%2FDigitalniZeleniSertifikat%2FvalidacijaDokumenta%2Fid%3DcmVxSUQ9YmQxNzRmMzgtYzlkZi00NmE5LTljMjgtMmQ1ZTFkZGEyOWFhJnBhc3Nwb3J0TnVtYmVyPUEyNTMwOTEmY29uZmlybWF0aW9uTnVtYmVyPTU3MjUyODktMjgxNDUyMyZsYW5nPWVuLWdi-Do987%252f%252fD99QgqM5p8NEzzQ%3D%3D">Ћирилица</a>
+                                  <a class="dropdown-item" href="/RedirectToLocalizedContent?targetculture=sr-Latn&amp;contentItemUrl=%2FDigitalniZeleniSertifikat%2FvalidacijaDokumenta%2Fid%3DcmVxSUQ9YmQxNzRmMzgtYzlkZi00NmE5LTljMjgtMmQ1ZTFkZGEyOWFhJnBhc3Nwb3J0TnVtYmVyPUEyNTMwOTEmY29uZmlybWF0aW9uTnVtYmVyPTU3MjUyODktMjgxNDUyMyZsYW5nPWVuLWdi-Do987%252f%252fD99QgqM5p8NEzzQ%3D%3D">Latinica</a>
+                              </li>
+                        </ul>
+                    </div>
+                  </nav>
+        </div> 
+        </div>
+      </div>
+    </header>
+<section class="page-content contact">
+    <div class="custom-container-one">
+        <h2 class="to-center to-center-sr-header">Дигитални зелени сертификат</h2>
+        <p class="to-center h3 custom-subtitle">Потврда о извршеној вакцинацији против COVID-19 и резултатима тестирања</p>
+        <h2 class="to-center to-center-sr-header">Digital green certificate</h2>
+        <p class="to-center h3 custom-subtitle">Confirmation of vaccination against COVID-19 and test results</p>
+        <div class="main-container">
+            <div class="custom-container" style="background-color: green">
+                <div class="info-container">
+                    <div class="container-row">
+                        <label class="label-info">Име / Name:</label><span class="span-info">GJURGICA</span>
+                    </div>
+                    <div class="container-row">
+                        <label class="label-info">Презиме / Surname:</label><span class="span-info">ANASTASOVSKA</span>
+                    </div>
+                    <div class="container-double-row">
+                        <label class="label-info">Датум рођења / Date of birth:</label><span class="span-infoBD">26-01-1978</span>
+                    </div>
+                    <div class="container-row">
+                        <label class="label-info">Статус / Status:</label><span class="span-info">зелено / green</span><i class="fas fa-check-circle" style="font-size:28px;color:green;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<form class="gen-form centered-form">
+    <div class="pc">
+        <div>
+            <div class="form-row">
+                <div>
+                    <ul class="lic-list">
+                        <li>
+                            <ul class="accordion">
+                                <li class="">
+                                    <div class="head"><a name="personData">Подаци / Data</a><span></span></div>
+                                    <div class="content">
+                                        <div class="pc-single">
+                                            <div>
+                                                <ul class="lic-list">
+                                                    <li>
+                                                        <label>Јединствени матични број грађана (ЈМБГ) / Unique master citizen number (UMCN)</label>
+                                                        <span></span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Име / Name</label>
+                                                        <span>GJURGICA</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Име (ћирилицом) / Name (cirilic)</label>
+                                                        <span>GJURGICA</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Презиме / Surname</label>
+                                                        <span>ANASTASOVSKA</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Презиме (ћирилицом) / Surname (cirilic)</label>
+                                                        <span>ANASTASOVSKA</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Пол / Gender</label>
+                                                        <span>&#x41C;&#x443;&#x448;&#x43A;&#x43E;</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Пол (латиница)/ Gender (latin)</label>
+                                                        <span>Zensko</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Пол (енг)/ Gender (english)</label>
+                                                        <span>Female</span>
+                                                    </li>
+                                                    <li>
+                                                        <label>Датум рођења / Date of birth</label>
+                                                        <span>26-01-1978</span>
+                                                    </li>
+                                                        <li>
+                                                            <ul class="accordion">
+                                                                <li class="">
+
+                                                                        <div class="head" style="background-color: greenyellow"><a name="nepokretnost">Подаци о вакцинацији / Vaccination data </a><span></span></div>
+                                                                            <div class="content" style="background-color: greenyellow">
+                                                                                <div class="pc-single">
+                                                                                    <div>
+                                                                                        <ul class="lic-list">
+
+                                                                                            <li>
+                                                                                                <label>Доза / Dose:</label>
+                                                                                                <span>1</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Тип / Type:</label>
+                                                                                                <span>Pfizer-BioNTech</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Серијски број / Serial number:</label>
+                                                                                                <span>FC3098</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Датум вакцинаицје / Date of vaccination:</label>
+                                                                                                <span>16-07-2021</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Произвођач / Manufacturer:</label>
+                                                                                                <span>BIONTECH MANUFACTURING GMBH</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Место вакцинације / Vaccination site:</label>
+                                                                                                <span>&#x417;&#x414;&#x420;&#x410;&#x412;&#x421;&#x422;&#x412;&#x415;&#x41D;&#x418; &#x426;&#x415;&#x41D;&#x422;&#x410;&#x420; &#x412;&#x420;&#x410;&#x40A;&#x415;</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Место вакцинације (латиница) / Vaccination site (latin):</label>
+                                                                                                <span>ZDRAVSTVENI CENTAR VRANJE</span>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="content" style="background-color: greenyellow">
+                                                                                <div class="pc-single">
+                                                                                    <div>
+                                                                                        <ul class="lic-list">
+
+                                                                                            <li>
+                                                                                                <label>Доза / Dose:</label>
+                                                                                                <span>2</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Тип / Type:</label>
+                                                                                                <span>Pfizer-BioNTech</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Серијски број / Serial number:</label>
+                                                                                                <span>FD0932</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Датум вакцинаицје / Date of vaccination:</label>
+                                                                                                <span>06-08-2021</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Произвођач / Manufacturer:</label>
+                                                                                                <span>BIONTECH MANUFACTURING GMBH</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Место вакцинације / Vaccination site:</label>
+                                                                                                <span>&#x417;&#x414;&#x420;&#x410;&#x412;&#x421;&#x422;&#x412;&#x415;&#x41D;&#x418; &#x426;&#x415;&#x41D;&#x422;&#x410;&#x420; &#x412;&#x420;&#x410;&#x40A;&#x415;</span>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <label>Место вакцинације (латиница) / Vaccination site (latin):</label>
+                                                                                                <span>ZDRAVSTVENI CENTAR VRANJE</span>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    <li>
+                                                        <label id="documentValidityId"><b>Документ је валидан. / Document is valid.</b></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-row">
+                <button id="closeCovidPassportResponse">Заврши / Done</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</section>
+
+    <div class="foot-top">
+      <div class="container">
+        <a href="#">Врх стране</a>
+      </div>
+    </div>
+    <footer>
+      <div class="container">        
+	  <div class="foot-content">       
+	  <div class="site-title">         
+	  <h3>euprava.gov.rs</h3>          
+	  <p>Портал еУправа Републике Србије</p>  
+	  </div>          
+	  <div class="copy">Веб презентација је лиценцирана под условима лиценце 
+	  <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/rs/"  target="_blank"> Creative Commons</a> Ауторство-Некомерцијално-Без прераде 3.0 Србија. Веб пројекат <a href="https://www.ite.gov.rs/" target="_blank">ite.gov.rs</a>           </div>          
+	  <ul class="nav">             
+	  <li><a href="/uslovi_koriscenja"  target="_blank">Услови коришћења</a></li>                 
+	  <li class="emph"><a href="">Подешавања</a></li>      
+	  </ul>       
+	  </div>       
+	  <ul class="foot-social">
+      <li class="in"><a href="https://www.linkedin.com/company/kancelarija-ite/" target="_blank">Linkedin</a></li>
+	  <li class="ig"><a href="https://www.instagram.com/kancelarijaite/" target="_blank">Instagram</a></li>
+	  <li class="fb"><a href="https://www.facebook.com/KancelarijaITE/" target="_blank">Facebook</a></li> 
+	  <li class="tw"><a href="https://twitter.com/kancelarijaITE" target="_blank">Twitter</a></li>   
+	  <li class="py"><a href="https://www.youtube.com/user/euprava" target="_blank">Play</a></li>   
+	  </ul>    
+	  </div>
+    </footer>
+     <div class="bottom-popup" id="bottom-popup">
+        <div class="bottom-popup-content">
+            <h2>Обавештење о колачићима</h2>
+            <p>Портал еУправа користи "колачиће" (енг. "cookies"). Неопходни колачићи омогућавају да се садржај страница прилагоди потребама корисника. Аналитички колачићи се користе за анализу коришћења услуга у циљу унапређења корисничког искуства. 
+            </p>
+            <p>Kликом на "Прихватам" дајете сагласност за коришћење колачића у сврхе наведене испод. Подешавања колачића можете променити у било ком тренутку.</p>
+            <div class="cookie-settings">
+                <form class="gen-form">
+                    <div class="form-row">
+                        <div class="col-4">
+                            <label class="checkbox disabled"><input type="checkbox" name="chk1" checked="true" disabled
+                                    data-req-required="Морате обележити ово поље"><span></span>Неопходни</label>
+                        </div>
+                       <div class="col-4">
+                            <label class="checkbox"><input type="checkbox" checked="true"
+                                    id="analytic-cookies-checkbox"><span></span>Аналитички</label>
+                        </div>
+                    </div>
+                    <div class="form-row action"><button class="btn primary" id="accept">Прихватам</button>
+
+                    </div>
+                    <div class="form-row">
+                        <a class="btn default" target="_blank" href="/uslovi_koriscenja">Више информација</a>
+                    </div>
+                </form>
+
+            </div>
+    
+
+    
+ 	
+
+
+
+<div class="widget-container">
+
+    <div class="widget widget-raw-html">
+    <div class="widget-body">
+    
+
+
+<div class="field field-type-htmlfield field-name-raw-html-content">
+
+</div>
+    </div>
+</div>
+
+</div>
+<script src="test_v.js"></script>
+  </body>
+</html>

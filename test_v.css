@@ -338,3 +338,88 @@ a {
     overflow: hidden;
     font-weight: 700;
 }
+footer {
+    color: #a0a0a0;
+}
+footer .container {
+    display: -webkit-box;
+    display: flex;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+footer .foot-content {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 0;
+}
+footer .site-title {
+    padding: 37px 0 20px 70px;
+    background: url(./grb.jpg) no-repeat 0 50%/50px auto;
+}
+footer .site-title h3 {
+    color: #253965;
+    font-size: 2rem;
+    font-weight: 700;
+}
+footer .site-title p {
+    color: #4f4f4f;
+}
+footer .copy {
+    font-size: .85rem;
+    padding: 0 0 10px 70px;
+    margin-right: 110px;
+}
+footer .copy a {
+    color: #253965;
+}
+footer .nav {
+    font-size: .85rem;
+    padding: 0 0 30px 70px;
+    display: -webkit-box;
+    display: flex;
+}
+footer .nav li {
+    margin-right: 6px;
+    padding-right: 6px;
+    border-right: 1px solid #a0a0a0;
+}
+footer .nav li.emph, footer .nav li.emph a:hover {
+    color: #253965;
+}
+footer .foot-social {
+    width: 260px;
+    padding-top: 34px;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.bottom-popup {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    box-shadow: 0 0 0 1px #d9d9d9;
+    text-align: justify;
+}
+.bottom-popup .bottom-popup-content {
+    max-width: 650px;
+    margin: auto;
+    padding: 2em;
+}
+.fab,
+.far{
+    color: #253965;
+    font-size: 20px;
+    border: 2px solid #253965;
+    border-radius: 24px;
+    padding: 13px;
+}

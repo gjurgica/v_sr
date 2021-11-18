@@ -221,21 +221,18 @@ li {
     color: #253965;
     background: #f8f8f8;
     margin: 3px 0;
+    width: 550px;
 }
 a {
     color: inherit;
     text-decoration: none;
 }
-.accordion>li .head {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    line-height: 27px;
-    padding: 15px 80px 15px 36px;
-    font-size: 1.28rem;
-    background: #f8f8f8;
-    margin: 3px 0;
+.accordion>li #content {
+    display: none;
+    color: #333;
+    font-size: 1.14rem;
+    line-height: 24px;
+    padding: 40px 35px;
 }
 .accordion>li .head span {
     content: "";
@@ -253,4 +250,91 @@ a {
 }
 .accordion>li .head span:before {
     transform: rotate(-90deg);
+}
+.lic-list>li>ul.accordion>li>#content {
+    padding: 10px;
+}
+.gen-form .form-row label {
+    margin-bottom: 4px;
+    color: #253965;
+    display: block;
+}
+.accordion>li.open>.head span:after, .accordion>li.open>.head span:before {
+    background: #253965;
+    transform: rotate(0deg);
+}
+.accordion>li.open>.head span:after, .accordion>li.open>.head span:before {
+    background: #253965;
+    -webkit-transform: rotate(
+0deg);
+    transform: rotate(
+0deg);
+}
+.accordion>li .head span:after, .accordion>li .head span:before {
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    content: "";
+    left: calc(50% - 6px);
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+}
+#content{
+    display: none;
+}
+.gen-form .form-row label {
+    margin-bottom: 4px;
+    color: #253965;
+    display: block;
+}
+.accordion>li #content span {
+    text-transform: uppercase;
+    color: #253965;
+}
+#second-content{
+    display: none;
+}
+#documentValidityId {
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
+.gen-form .form-row {
+    position: relative;
+    margin-bottom: 30px;
+    padding-right: 22px;
+}
+#closeCovidPassportResponse {
+    width: 200px;
+}
+.activity-details .lgbtn.lg2>span:first-child, .gen-form .form-row .button>span:first-child, .gen-form .form-row button>span:first-child, .my-egov-page .user-info .btn:last-child>span:first-child, .notifications-form button>span:first-child, .side-institution a.button>span:first-child {
+    z-index: 1;
+    position: relative;
+}
+.gen-form .form-row .button, .gen-form .form-row button {
+    width: 100%;
+    color: #fff;
+    background: #253965;
+    font-size: 1.28rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    height: 50px;
+    transition: .3s;
+}
+.foot-top {
+    position: sticky;
+    background: #253965;
+    height: 40px;
+    color: #4a90e2;
+}
+.foot-top a {
+    margin-left: auto;
+    height: 35px;
+    border-top: 5px solid #4a90e2;
+    line-height: 30px;
+    padding: 0 20px 0 10px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 700;
 }

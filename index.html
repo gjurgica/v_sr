@@ -217,8 +217,9 @@
                         <li>
                             <ul class="accordion">
                                 <li class="">
-                                    <div class="head"><a name="personData">Подаци / Data</a><span></span></div>
-                                    <div class="content">
+                                    <div class="head"><a name="personData">Подаци / Data</a>
+                                        <i class="fas fa-times-circle" onclick="openData()" style="float: right;"></i></div>
+                                    <div id="content">
                                         <div class="pc-single">
                                             <div>
                                                 <ul class="lic-list">
@@ -262,87 +263,91 @@
                                                             <ul class="accordion">
                                                                 <li class="">
 
-                                                                        <div class="head" style="background-color: greenyellow"><a name="nepokretnost">Подаци о вакцинацији / Vaccination data </a><span></span></div>
-                                                                            <div class="content" style="background-color: greenyellow">
-                                                                                <div class="pc-single">
-                                                                                    <div>
-                                                                                        <ul class="lic-list">
-
-                                                                                            <li>
-                                                                                                <label>Доза / Dose:</label>
-                                                                                                <span>1</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Тип / Type:</label>
-                                                                                                <span>Pfizer-BioNTech</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Серијски број / Serial number:</label>
-                                                                                                <span>FC3098</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Датум вакцинаицје / Date of vaccination:</label>
-                                                                                                <span>16-07-2021</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Произвођач / Manufacturer:</label>
-                                                                                                <span>BIONTECH MANUFACTURING GMBH</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Место вакцинације / Vaccination site:</label>
-                                                                                                <span>&#x417;&#x414;&#x420;&#x410;&#x412;&#x421;&#x422;&#x412;&#x415;&#x41D;&#x418; &#x426;&#x415;&#x41D;&#x422;&#x410;&#x420; &#x412;&#x420;&#x410;&#x40A;&#x415;</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Место вакцинације (латиница) / Vaccination site (latin):</label>
-                                                                                                <span>ZDRAVSTVENI CENTAR VRANJE</span>
-                                                                                            </li>
-                                                                                        </ul>
+                                                                        <div class="head" style="background-color: greenyellow"><a name="nepokretnost">Подаци о вакцинацији / Vaccination data </a>
+                                                                            <i class="fas fa-times-circle" onclick="openSecondData()" style="float: right;"></i></div>
+                                                                            <div id="second-content">
+                                                                                <div class="content" style="background-color: greenyellow">
+                                                                                    <div class="pc-single">
+                                                                                        <div>
+                                                                                            <ul class="lic-list">
+    
+                                                                                                <li>
+                                                                                                    <label>Доза / Dose:</label>
+                                                                                                    <span>1</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Тип / Type:</label>
+                                                                                                    <span>Pfizer-BioNTech</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Серијски број / Serial number:</label>
+                                                                                                    <span>FC3098</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Датум вакцинаицје / Date of vaccination:</label>
+                                                                                                    <span>16-07-2021</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Произвођач / Manufacturer:</label>
+                                                                                                    <span>BIONTECH MANUFACTURING GMBH</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Место вакцинације / Vaccination site:</label>
+                                                                                                    <span>&#x417;&#x414;&#x420;&#x410;&#x412;&#x421;&#x422;&#x412;&#x415;&#x41D;&#x418; &#x426;&#x415;&#x41D;&#x422;&#x410;&#x420; &#x412;&#x420;&#x410;&#x40A;&#x415;</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Место вакцинације (латиница) / Vaccination site (latin):</label>
+                                                                                                    <span>ZDRAVSTVENI CENTAR VRANJE</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="content" style="background-color: greenyellow">
+                                                                                    <div class="pc-single">
+                                                                                        <div>
+                                                                                            <ul class="lic-list">
+    
+                                                                                                <li>
+                                                                                                    <label>Доза / Dose:</label>
+                                                                                                    <span>2</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Тип / Type:</label>
+                                                                                                    <span>Pfizer-BioNTech</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Серијски број / Serial number:</label>
+                                                                                                    <span>FD0932</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Датум вакцинаицје / Date of vaccination:</label>
+                                                                                                    <span>06-08-2021</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Произвођач / Manufacturer:</label>
+                                                                                                    <span>BIONTECH MANUFACTURING GMBH</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Место вакцинације / Vaccination site:</label>
+                                                                                                    <span>&#x417;&#x414;&#x420;&#x410;&#x412;&#x421;&#x422;&#x412;&#x415;&#x41D;&#x418; &#x426;&#x415;&#x41D;&#x422;&#x410;&#x420; &#x412;&#x420;&#x410;&#x40A;&#x415;</span>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <label>Место вакцинације (латиница) / Vaccination site (latin):</label>
+                                                                                                    <span>ZDRAVSTVENI CENTAR VRANJE</span>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="content" style="background-color: greenyellow">
-                                                                                <div class="pc-single">
-                                                                                    <div>
-                                                                                        <ul class="lic-list">
 
-                                                                                            <li>
-                                                                                                <label>Доза / Dose:</label>
-                                                                                                <span>2</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Тип / Type:</label>
-                                                                                                <span>Pfizer-BioNTech</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Серијски број / Serial number:</label>
-                                                                                                <span>FD0932</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Датум вакцинаицје / Date of vaccination:</label>
-                                                                                                <span>06-08-2021</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Произвођач / Manufacturer:</label>
-                                                                                                <span>BIONTECH MANUFACTURING GMBH</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Место вакцинације / Vaccination site:</label>
-                                                                                                <span>&#x417;&#x414;&#x420;&#x410;&#x412;&#x421;&#x422;&#x412;&#x415;&#x41D;&#x418; &#x426;&#x415;&#x41D;&#x422;&#x410;&#x420; &#x412;&#x420;&#x410;&#x40A;&#x415;</span>
-                                                                                            </li>
-                                                                                            <li>
-                                                                                                <label>Место вакцинације (латиница) / Vaccination site (latin):</label>
-                                                                                                <span>ZDRAVSTVENI CENTAR VRANJE</span>
-                                                                                            </li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
 
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                     <li>
-                                                        <label id="documentValidityId"><b>Документ је валидан. / Document is valid.</b></label>
+                                                        <label id="documentValidityId"><b>Документ је валидан. /</b></br> Document is valid.</b></label>
                                                     </li>
                                                 </ul>
                                             </div>
